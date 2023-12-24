@@ -51,29 +51,142 @@
 			mso-table-lspace: 0pt;
 			mso-table-rspace: 0pt;
 		}
+      
+
+        
+
+        .user-name-block {
+            font-family:'Bebas', sans-serif;
+            /* font-size: 90px;  */
+       
+                font-size: 17vw;
+            
+            text-transform: uppercase; 
+            line-height: 1.1; 
+            color:#603813;
+        }
 
         .clearsans {
-            font-family:'Clear Sans';
+            font-family:'Clear Sans', sans-serif;
             font-weight: 700;
             font-size:26px;
             line-height: 1.1;
             color: #603813;
         }
 
+        .sum {
+            padding-bottom: 2rem;
+            padding-top: 2rem; font-family:'Bebas', sans-serif;
+            font-weight: 700;
+            /* font-size:62px; */
+            line-height: 1;
+            color: #603813;
+            text-transform: uppercase;
+                                                        
+        }
+
         .description-title {
             margin-bottom: 1rem;
             font-family: 'Bebas', sans-serif;
-            font-size: 62px;
+            /* font-size: 62px; */
             line-height: 1;
         }
 
         .description-text {
             margin-bottom: 0.2rem;
         }
+
+        @media screen and (max-width: 1920px) {
+            .user-name-block {
+                font-size: 70px;
+            }
+
+            .sum {
+                font-size: 50px;
+            }
+
+            .logo {
+                width: 30%;
+            }
+
+            .thanks-for-order {
+                background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line.png?raw=true'); 
+            }
+        }
+
+        @media screen and (max-width: 1630px) {
+            .user-name-block {
+                font-size: 50px;
+            }
+
+            .sum {
+                font-size: 50px;
+            }
+        }
+        @media screen and (max-width: 1350px) {
+            .user-name-block {
+                font-size: 40px;
+            }
+
+            .sum {
+                font-size: 50px;
+            }
+
+            .thanks-for-order {
+                padding: 4rem;
+                background: url('images/green-line-mob.png?raw=true'); 
+            }
+        }
+
+        @media  screen and (min-width: 1351px) {
+            .thanks-for-order {
+                padding: 1rem;
+                background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line.png?raw=true'); 
+            }
+
+            .description-title {
+                font-size: 62px;
+            }
+        }
+        @media screen and (max-width: 758px) {
+
+            .logo {
+                width: 90%;
+            }
+            .user-name-block {
+                font-size: 17vw;
+            }
+
+            .sum {
+                font-size: 50px;
+            }
+
+
+
+
+
+        }
+
+        @media screen and (min-width: 758px) {
+            .description-title {
+                font-size: 40px;
+            }
+        }
+
+        @media screen and (min-width: 1920px) {
+            .logo {
+                width: 30%;
+            }
+
+            
+
+        }
+
+        
 	</style>
 </head>
 
-<body style="margin: 0; padding: 0;">
+<body style="margin: 0; padding: 0; overflow-x: hidden;">
 	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin: auto; max-width: 1706px;">
         <tr>
             <td style="width:100%;max-width: 1706px; background: url('https://github.com/Khausta/anderson-email/blob/main/images/bg.png?raw=true'); background-repeat: no-repeat; background-position: center; background-size: cover; ">
@@ -91,14 +204,14 @@
                                             <table cellpadding="0" cellspacing="0" width="80%" align="center">
                                                 <tr>
                                                     <td align="center">
-                                                        <img src="https://github.com/Khausta/anderson-email/blob/main/images/logo.png?raw=true" alt="Логотип" style="width: 30%" />
+                                                        <img class="logo" src="https://github.com/Khausta/anderson-email/blob/main/images/logo.png?raw=true" alt="Логотип" />
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td height="46"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center" class="user-name-block" style="font-family:'Bebas', sans-serif; font-size: 90px; text-transform: uppercase; line-height: 1.1; color:#603813">
+                                                    <td align="center" class="user-name-block" >
                                                         <b>Добрый день,
                                                         <span class="user-name">Виктория</span>!
                                                         </b>
@@ -108,9 +221,9 @@
                                                     <td height="50"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td  align="center" class="order-info" 
-                                                    style="padding:1rem; 
-                                                    background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line.png?raw=true'); 
+                                                    <td class="thanks-for-order" align="center" class="order-info" 
+                                                    style="
+                                                     
                                                     background-repeat: no-repeat; 
                                                     background-position: center;                                     
                                                     background-size: contain; 
@@ -129,7 +242,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="clearsans" align="center">
-                                                        Скоро наш менеджер свяжется с вами для уточнения деталей праздника <br> и скажет как внести предоплату. <br>
+                                                        Скоро наш менеджер свяжется с вами для уточнения деталей праздника и скажет как внести предоплату. 
                                                         Заказ считается принятым только после внесения 50% предоплаты!
                                                     </td>
                                                 </tr>
@@ -205,14 +318,7 @@
                                                 </table>
                                                 <table class="clearsans" cellpadding="0" cellspacing="0" width="80%" align="center">
                                                     <tr>
-                                                        <td class="sum" align="center" style="padding-bottom: 2rem;
-                                                        padding-top: 2rem; font-family:'Bebas', sans-serif;
-                                                        font-weight: 700;
-                                                        font-size:62px;
-                                                        line-height: 1;
-                                                        color: #603813;
-                                                        text-transform: uppercase;
-                                                        ">
+                                                        <td class="sum" align="center" >
                                                             Сумма заказа: 100 000 руб.
                                                         </td>
                                                 </tr>
@@ -228,10 +334,11 @@
                                                 <td>
                                                     <table class="clearsans" cellpadding="0" cellspacing="0" align="center"   
                                                     style="
-                                                    width: 80%;
+                                                    width: 100%;
                                                     max-width: 1358px;
                                                     padding-top: 1rem;
                                                     padding-bottom: 1rem;
+                                                    padding-left: 3rem;
                                                     border-spacing: 0;
                                                     border-collapse: separate;
                                                     color: #ffffff;
@@ -262,7 +369,7 @@
 
                                                 <!-- товар 1 -->
                                                         <tr>
-                                                            <td style="max-width: 1358px" style="">
+                                                            <td style="max-width: 1358px" >
                                                                 <table class="clearsans" cellpadding="0" cellspacing="0"  align="center"   
                                                                 style="
                                                                 width: 100%;
@@ -277,16 +384,16 @@
                                                                 overflow: hidden;">
                                                                     <tr>
                                                                         <td>
-                                                                            <table align="center"  class="clearsans" cellpadding="0" cellspacing="0" style="width: 80%;  padding-left: 3rem;">
+                                                                            <table align="center"  class="clearsans" cellpadding="0" cellspacing="0" style="padding-left: 3rem;">
                                                                                 <tr>
                                                                                     <td height="auto" style="width: 20%; min-width: 220px;   padding-top: 2rem;" valign="center">
-                                                                                        <img style="height: 100%;" src="images/barbie-land.png" alt="">
+                                                                                        <img style="height: 100%;" src="https://github.com/Khausta/anderson-email/blob/main/images/barbie-land.png?raw=true" alt="">
                                                                                     </td>
                                                                                     <td style="width: 80%;   " valign="top" >
                                                                                         <table width="100%" class="clearsans" cellpadding="0" cellspacing="0" valign="top" >
                                                                                             <tr>
                                                                                                 <td  valign="top" align="right" valign="top">
-                                                                                                    <img width="50px" src="images/pink-flag.png" alt="">
+                                                                                                    <img width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
                                                                                                 </td>
             
                                                                                                 
@@ -324,71 +431,138 @@
                                                             </td>
                                                         </tr>
                                               
-                                                <!-- товар 1 -->
-                                                        <tr>
-                                                            <td style="max-width: 1358px" style="">
-                                                                <table class="clearsans" cellpadding="0" cellspacing="0"  align="center"   
-                                                                style="
-                                                                width: 100%;
-                                                                padding-bottom: 2rem;
-                                                                padding-left: 3rem;
-                                                                /* padding-right: 3rem; */
-                                                                border-spacing: 0;
-                                                                border-collapse: separate;
-                                                                color: #603813;
-                                                                font-size: 62px;
-                                                                border-bottom: 3px solid #603813;   
-                                                                overflow: hidden;">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <table align="center"  class="clearsans" cellpadding="0" cellspacing="0" style="width: 80%;  padding-left: 3rem;">
-                                                                                <tr>
-                                                                                    <td height="auto" style="width: 20%; min-width: 220px;   padding-top: 2rem;" valign="center">
-                                                                                        <img style="height: 100%;" src="images/barbie-land.png" alt="">
-                                                                                    </td>
-                                                                                    <td style="width: 80%;   " valign="top" >
-                                                                                        <table width="100%" class="clearsans" cellpadding="0" cellspacing="0" valign="top" >
-                                                                                            <tr>
-                                                                                                <td  valign="top" align="right" valign="top">
-                                                                                                    <img width="50px" src="images/pink-flag.png" alt="">
-                                                                                                </td>
-            
-                                                                                                
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td>
-                                                                                                    <table style="min-height: 200px;" class="clearsans" cellpadding="0" cellspacing="0" valign="bottom">
-                                                                                                        <tr>
-                                                                                                            <td valign="bottom" style="    padding-left: 2rem;">
-                                                                                                                <div class="description-title">
-                                                                                                                    Барбилэнд в АндерСон  
-                                                                                                                </div>
-                                                                                                                <div class="clear-sans description-text">
-                                                                                                                    Количество: 3
-                                                                                                                </div>
-                                                                                                                <div class="clear-sans description-text">
-                                                                                                                    Стоимость: 24 000 руб.
-                                                                                                                </div>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </table>  
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                             
-                                                                                        </table>
-                                                                                    
-                                                                                    </td>
-                                                                                    
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                   
-                                                                </table>
-                                                            </td>
-                                                        </tr>
                                               
-
+                                                <!-- товар 2 -->
+                                                <tr>
+                                                    <td style="max-width: 1358px" >
+                                                        <table class="clearsans" cellpadding="0" cellspacing="0"  align="center"   
+                                                        style="
+                                                        width: 100%;
+                                                        padding-bottom: 2rem;
+                                                        padding-left: 3rem;
+                                                        /* padding-right: 3rem; */
+                                                        border-spacing: 0;
+                                                        border-collapse: separate;
+                                                        color: #603813;
+                                                        font-size: 62px;
+                                                        border-bottom: 3px solid #603813;   
+                                                        overflow: hidden;">
+                                                            <tr>
+                                                                <td>
+                                                                    <table align="center"  class="clearsans" cellpadding="0" cellspacing="0" style="padding-left: 3rem;">
+                                                                        <tr>
+                                                                            <td height="auto" style="width: 20%; min-width: 220px;   padding-top: 2rem;" valign="center">
+                                                                                <img style="height: 100%;" src="https://github.com/Khausta/anderson-email/blob/main/images/barbie-land.png?raw=true" alt="">
+                                                                            </td>
+                                                                            <td style="width: 80%;   " valign="top" >
+                                                                                <table width="100%" class="clearsans" cellpadding="0" cellspacing="0" valign="top" >
+                                                                                    <tr>
+                                                                                        <td  valign="top" align="right" valign="top">
+                                                                                            <img width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
+                                                                                        </td>
+    
+                                                                                        
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table style="min-height: 200px;" class="clearsans" cellpadding="0" cellspacing="0" valign="bottom">
+                                                                                                <tr>
+                                                                                                    <td valign="bottom" style="    padding-left: 2rem;">
+                                                                                                        <div class="description-title">
+                                                                                                            Барбилэнд в АндерСон  
+                                                                                                        </div>
+                                                                                                        <div class="clear-sans description-text">
+                                                                                                            Количество: 3
+                                                                                                        </div>
+                                                                                                        <div class="clear-sans description-text">
+                                                                                                            Стоимость: 24 000 руб.
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>  
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                     
+                                                                                </table>
+                                                                            
+                                                                            </td>
+                                                                            
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                           
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                      
+                                                        
+                                                <!-- товар 3 -->
+                                                <tr>
+                                                    <td style="max-width: 1358px" >
+                                                        <table class="clearsans" cellpadding="0" cellspacing="0"  align="center"   
+                                                        style="
+                                                        width: 100%;
+                                                        padding-bottom: 2rem;
+                                                        padding-left: 3rem;
+                                                        /* padding-right: 3rem; */
+                                                        border-spacing: 0;
+                                                        border-collapse: separate;
+                                                        color: #603813;
+                                                        font-size: 62px;
+                                                        border-bottom: 3px solid #603813;   
+                                                        overflow: hidden;">
+                                                            <tr>
+                                                                <td>
+                                                                    <table align="center"  class="clearsans" cellpadding="0" cellspacing="0" style="padding-left: 3rem;">
+                                                                        <tr>
+                                                                            <td height="auto" style="width: 20%; min-width: 220px;   padding-top: 2rem;" valign="center">
+                                                                                <img style="height: 100%;" src="https://github.com/Khausta/anderson-email/blob/main/images/barbie-land.png?raw=true" alt="">
+                                                                            </td>
+                                                                            <td style="width: 80%;   " valign="top" >
+                                                                                <table width="100%" class="clearsans" cellpadding="0" cellspacing="0" valign="top" >
+                                                                                    <tr>
+                                                                                        <td  valign="top" align="right" valign="top">
+                                                                                            <img width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
+                                                                                        </td>
+    
+                                                                                        
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table style="min-height: 200px;" class="clearsans" cellpadding="0" cellspacing="0" valign="bottom">
+                                                                                                <tr>
+                                                                                                    <td valign="bottom" style="    padding-left: 2rem;">
+                                                                                                        <div class="description-title">
+                                                                                                            Барбилэнд в АндерСон  
+                                                                                                        </div>
+                                                                                                        <div class="clear-sans description-text">
+                                                                                                            Количество: 3
+                                                                                                        </div>
+                                                                                                        <div class="clear-sans description-text">
+                                                                                                            Стоимость: 24 000 руб.
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>  
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                     
+                                                                                </table>
+                                                                            
+                                                                            </td>
+                                                                            
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                           
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                      
+                                              
+                                              
 
                                                 </table>
                                               
