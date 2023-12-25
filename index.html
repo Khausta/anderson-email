@@ -3,6 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
 	<title>HTML Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.rawgit.com/resir014/Clear-Sans-Webfont/v1.1.0/css/clear-sans.css">
 
-	<style>
+    <!-- <style type="text/css">
+
+        :root {
+        
+          color-scheme: light dark;
+        
+          supported-color-schemes: light dark;
+        
+         }
+        
+        </style> -->
+
+	<style type="text/css">
+
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+       }
+
         @font-face {
             font-family: 'Bebas';
             src: url('http://tottem.ru/wp-content/themes/ipinpro/font/bebasneue_bold.eot');
@@ -53,18 +73,11 @@
 		}
       
 
-        
+        .logo {
+                width: 30%;
+            }
 
-        .user-name-block {
-            font-family:'Bebas', sans-serif;
-            /* font-size: 90px;  */
        
-                font-size: 17vw;
-            
-            text-transform: uppercase; 
-            line-height: 1.1; 
-            color:#603813;
-        }
 
         .clearsans {
             font-family:'Clear Sans', sans-serif;
@@ -78,7 +91,7 @@
             padding-bottom: 2rem;
             padding-top: 2rem; font-family:'Bebas', sans-serif;
             font-weight: 700;
-            /* font-size:62px; */
+            font-size:62px;
             line-height: 1;
             color: #603813;
             text-transform: uppercase;
@@ -88,99 +101,102 @@
         .description-title {
             margin-bottom: 1rem;
             font-family: 'Bebas', sans-serif;
-            /* font-size: 62px; */
+            font-size: 62px;
             line-height: 1;
+            
         }
 
-        .description-text {
-            margin-bottom: 0.2rem;
-        }
+        
 
         @media screen and (max-width: 1920px) {
             .user-name-block {
-                font-size: 70px;
+                font-size: 70px !important;
             }
 
             .sum {
-                font-size: 50px;
-            }
-
-            .logo {
-                width: 30%;
-            }
-
-            .thanks-for-order {
-                background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line.png?raw=true'); 
+                font-size: 50px !important;
             }
         }
 
         @media screen and (max-width: 1630px) {
             .user-name-block {
-                font-size: 50px;
+                font-size: 50px !important;
             }
 
-            .sum {
-                font-size: 50px;
+            .detailes-br {
+                display: none !important;
             }
+
         }
+
         @media screen and (max-width: 1350px) {
             .user-name-block {
-                font-size: 40px;
-            }
-
-            .sum {
-                font-size: 50px;
+                font-size: 40px !important;
             }
 
             .thanks-for-order {
-                padding: 4rem;
-                background: url('images/green-line-mob.png?raw=true'); 
+                padding: 4rem !important;
+                background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line-mob.png?raw=true') !important; 
+                background-repeat: no-repeat !important; 
+                background-position: center !important;                                     
+                background-size: contain !important; 
             }
         }
 
-        @media  screen and (min-width: 1351px) {
-            .thanks-for-order {
-                padding: 1rem;
-                background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line.png?raw=true'); 
-            }
-
-            .description-title {
-                font-size: 62px;
-            }
-        }
         @media screen and (max-width: 758px) {
 
             .logo {
-                width: 90%;
+                width: 90% !important;
             }
             .user-name-block {
-                font-size: 17vw;
+                font-size: 76px !important;
             }
 
             .sum {
-                font-size: 50px;
+                font-size: 11vw !important;
             }
 
-
-
-
-
-        }
-
-        @media screen and (min-width: 758px) {
-            .description-title {
-                font-size: 40px;
-            }
-        }
-
-        @media screen and (min-width: 1920px) {
-            .logo {
-                width: 30%;
+            .list-title {
+                padding-left: 0 !important;
             }
 
             
 
+            .client-info {
+                width: 90% !important;
+            }
+
+            .description-title {
+                font-size: 50px !important;
+            }
+
+            .flag {
+                padding-right: 1rem !important;
+            }
+
+
         }
+
+        @media (prefers-color-scheme: dark ) {
+            [data-ogsc] .clearsans {
+                color:#603813 !important;
+            }
+
+            [data-ogsc] .sum {
+                color:#603813 !important;
+            }
+
+            [data-ogsc] .client-info {
+                background: rgba(255, 255, 255, 0.8) !important;
+            }
+
+            [data-ogsc] .list-items {
+                background: rgba(255, 255, 255, 0.8) !important;
+            }
+
+        }
+
+     
 
         
 	</style>
@@ -211,8 +227,12 @@
                                                     <td height="46"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center" class="user-name-block" >
-                                                        <b>Добрый день,
+                                                    <td align="center" class="user-name-block" style="font-family:'Bebas', sans-serif;
+                                                    font-size: 90px; 
+                                                    text-transform: uppercase; 
+                                                    line-height: 1.1; 
+                                                    color:#603813;">
+                                                        <b>Добрый&nbsp;день,
                                                         <span class="user-name">Виктория</span>!
                                                         </b>
                                                     </td>
@@ -221,36 +241,35 @@
                                                     <td height="50"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="thanks-for-order" align="center" class="order-info" 
-                                                    style="
-                                                     
+                                                    <td class="thanks-for-order" align="center" style="padding: 2rem;
+                                                    background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line.png?raw=true'); 
                                                     background-repeat: no-repeat; 
                                                     background-position: center;                                     
                                                     background-size: contain; 
-                                                    font-family:'Clear Sans';
+                                                    font-family:'Clear Sans', sans-serif;
                                                     font-weight: 700;
                                                     font-size:26px;
                                                     text-transform: uppercase;
                                                     line-height: 1.1;
-                                                    color: #ffffff;
-                                                    ">
-                                                        спасибо за вашу заявку номер <span class="order-number">WEB-123123</span>
+                                                    color: #ffffff;">
+                                                        СПАСИБО ЗА ВАШУ ЗАЯВКУ НОМЕР <span class="order-number">WEB&#8209;123123</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td height="32"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="clearsans" align="center">
-                                                        Скоро наш менеджер свяжется с вами для уточнения деталей праздника и скажет как внести предоплату. 
+                                                    <td class="clearsans detailes" align="center">
+                                                        Скоро наш менеджер свяжется с вами для уточнения деталей праздника <br class="detailes-br"> и скажет как внести предоплату. <br>
                                                         Заказ считается принятым только после внесения 50% предоплаты!
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td height="28"></td>
                                                 </tr>
-                                                <table class="clearsans" cellpadding="0" cellspacing="0" width="80%" align="center"  
+                                                <table class="clearsans client-info" cellpadding="0" cellspacing="0"  align="center"  
                                                     style="
+                                                    width: 80%;
                                                     max-width: 1358px;
                                                     padding-top: 2rem;
                                                     padding-left: 3rem;
@@ -274,7 +293,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            E-mail: <a href="mailto:loramoonlight@yandex.ru" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #603813">a.aleksandrova@cafe-anderson.ru</a>
+                                                            E-mail: <a href="mailto:a.aleksandrova@cafe-anderson.ru" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #603813">a.aleksandrova@cafe-anderson.ru</a>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -332,10 +351,10 @@
                                             <table cellpadding="0" cellspacing="0" width="  80%" align="center" style="width: 80%;"> 
                                                <tr>
                                                 <td>
-                                                    <table class="clearsans" cellpadding="0" cellspacing="0" align="center"   
+                                                    <table class="clearsans list-title" cellpadding="0" cellspacing="0" align="center"   
                                                     style="
                                                     width: 100%;
-                                                    max-width: 1358px;
+                                                    max-width: 1100px;
                                                     padding-top: 1rem;
                                                     padding-bottom: 1rem;
                                                     padding-left: 3rem;
@@ -346,7 +365,7 @@
                                                     text-transform: uppercase;   
                                                     overflow: hidden;">
                                                     <tr>
-                                                        <td style="max-width: 1358px">
+                                                        <td >
                                                             Вы заказали:
                                                         </td>
                                                     </tr>
@@ -357,11 +376,15 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="100%" style=" background: rgba(255, 255, 255, 0.6);"  >
+                                        <td class="list-items" width="100%" style=" background: rgba(255, 255, 255, 0.6);"  >
                                             <table class="clearsans" cellpadding="0" cellspacing="0" width="100%" align="center"   
                                                 style="
-                                                max-width: 1358px;
+                                                /* max-width: 1358px; */
+                                                max-width: 1108px;
                                                 padding-bottom: 2rem;
+                                                padding-left: 2rem;
+                                                padding-right: 2rem;
+                                                /* padding-left: 2rem; */
                                                 border-spacing: 0;
                                                 border-collapse: separate;
                                                 font-size: 62px;   
@@ -393,7 +416,7 @@
                                                                                         <table width="100%" class="clearsans" cellpadding="0" cellspacing="0" valign="top" >
                                                                                             <tr>
                                                                                                 <td  valign="top" align="right" valign="top">
-                                                                                                    <img width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
+                                                                                                    <img class="flag" style="padding-right: 4rem;" width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
                                                                                                 </td>
             
                                                                                                 
@@ -406,10 +429,10 @@
                                                                                                                 <div class="description-title">
                                                                                                                     Барбилэнд в АндерСон  
                                                                                                                 </div>
-                                                                                                                <div class="clear-sans description-text">
+                                                                                                                <div class="clear-sans description-text" style="margin-bottom: 0.2rem;">
                                                                                                                     Количество: 3
                                                                                                                 </div>
-                                                                                                                <div class="clear-sans description-text">
+                                                                                                                <div class="clear-sans description-text" style="margin-bottom: 0.2rem;">
                                                                                                                     Стоимость: 24 000 руб.
                                                                                                                 </div>
                                                                                                             </td>
@@ -458,7 +481,7 @@
                                                                                 <table width="100%" class="clearsans" cellpadding="0" cellspacing="0" valign="top" >
                                                                                     <tr>
                                                                                         <td  valign="top" align="right" valign="top">
-                                                                                            <img width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
+                                                                                            <img class="flag" style="padding-right: 4rem;" width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
                                                                                         </td>
     
                                                                                         
@@ -471,10 +494,10 @@
                                                                                                         <div class="description-title">
                                                                                                             Барбилэнд в АндерСон  
                                                                                                         </div>
-                                                                                                        <div class="clear-sans description-text">
+                                                                                                        <div class="clear-sans description-text" style="margin-bottom: 0.2rem;">
                                                                                                             Количество: 3
                                                                                                         </div>
-                                                                                                        <div class="clear-sans description-text">
+                                                                                                        <div class="clear-sans description-text" style="margin-bottom: 0.2rem;">
                                                                                                             Стоимость: 24 000 руб.
                                                                                                         </div>
                                                                                                     </td>
@@ -523,7 +546,7 @@
                                                                                 <table width="100%" class="clearsans" cellpadding="0" cellspacing="0" valign="top" >
                                                                                     <tr>
                                                                                         <td  valign="top" align="right" valign="top">
-                                                                                            <img width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
+                                                                                            <img class="flag" style="padding-right: 4rem;" width="50px" src="https://github.com/Khausta/anderson-email/blob/main/images/pink-flag.png?raw=true" alt="">
                                                                                         </td>
     
                                                                                         
@@ -536,10 +559,10 @@
                                                                                                         <div class="description-title">
                                                                                                             Барбилэнд в АндерСон  
                                                                                                         </div>
-                                                                                                        <div class="clear-sans description-text">
+                                                                                                        <div class="clear-sans description-text" style="margin-bottom: 0.2rem;">
                                                                                                             Количество: 3
                                                                                                         </div>
-                                                                                                        <div class="clear-sans description-text">
+                                                                                                        <div class="clear-sans description-text" style="margin-bottom: 0.2rem;">
                                                                                                             Стоимость: 24 000 руб.
                                                                                                         </div>
                                                                                                     </td>
