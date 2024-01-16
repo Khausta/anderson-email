@@ -34,8 +34,6 @@
 			line-height: 100%;
 		}
 
-		/* [style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;} */
-
 		img {
 			outline: none;
 			text-decoration: none;
@@ -47,9 +45,9 @@
 			display: block;
 		}
     
-		table td {
+		/* table td {
 			border-collapse: collapse;
-		}
+		} */
     
 		table {
 			border-collapse: collapse;
@@ -61,16 +59,16 @@
             color: #603813 !important;
         }
 
-        .logo {
+        /* .logo {
                 width: 30%;
-            }
+            } */
 
        
 
         .clearsans {
             font-family:'Clear Sans', sans-serif;
             font-weight: 700;
-            font-size:26px;
+            font-size:20px;
             line-height: 1.1;
             color: #603813;
         }
@@ -132,26 +130,25 @@
                 font-size:30px !important;
             }
 
-            .thanks-for-order {
-                padding: 4rem !important;
+            /* .thanks-for-order {
                 background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line-mob.png?raw=true') !important; 
                 background-repeat: no-repeat !important; 
                 background-position: center !important;                                     
                 background-size: contain !important; 
-            }
+            } */
         }
 
         @media screen and (max-width: 758px) {
 
-            .logo {
+            /* .logo {
                 width: 90% !important;
-            }
+            } */
             .user-name-block {
-                font-size: 17vw !important;
+                font-size: 9vw !important;
             }
 
             .sum {
-                font-size: 11vw !important;
+                font-size: 9vw !important;
             }
 
             .list-title {
@@ -219,7 +216,7 @@
                                             <table cellpadding="0" cellspacing="0" width="80%" align="center">
                                                 <tr>
                                                     <td align="center">
-                                                        <img class="logo" src="https://github.com/Khausta/anderson-email/blob/main/images/logo.png?raw=true" alt="Логотип" />
+                                                        <img class="logo" src="https://github.com/Khausta/anderson-email/blob/main/images/logo.png?raw=true" alt="Логотип" style="width: 90%; max-width: 250px !important;"/>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -230,8 +227,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td align="center" class="user-name-block" style="font-family:'Bebas', sans-serif;
-                                                    /* font-size: 4em;  */
-                                                    font-size: 366%;
+                                                    font-size: 200% !important;
                                                     text-transform: uppercase; 
                                                     line-height: 1.1; 
                                                     color:#603813;">
@@ -246,28 +242,41 @@
                                                         <br>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="thanks-for-order" align="center" style="padding: 2rem;
-                                                    background: url('https://github.com/Khausta/anderson-email/blob/main/images/green-line.png?raw=true'); 
-                                                    background-repeat: no-repeat; 
-                                                    background-position: center;                                     
-                                                    background-size: contain; 
-                                                    font-family:'Clear Sans', sans-serif;
-                                                    font-weight: 700;
-                                                    font-size:26px;
+                                                <table class="clearsans client-info" cellpadding="0" cellspacing="0"  align="center"  
+                                                    style="
+                                                    padding: 1em;
+                                                    width: 80%;
+                                                    max-width: 1358px;
+                                                    background: rgb(143, 199, 70);
                                                     text-transform: uppercase;
-                                                    line-height: 1.1;
-                                                    color: #ffffff;">
-                                                        СПАСИБО ЗА ВАШУ ЗАЯВКУ НОМЕР <span class="order-number">WEB&#8209;123123</span>
-                                                    </td>
-                                                </tr>
+                                                    text-align: center;
+                                                    border-spacing: 0;
+                                                    border-collapse: separate;
+                                                    border-radius: 30px;
+                                                    border: 3px solid #ffffff;
+                                                    color:#ffffff;
+                                                    font-size: 20px;
+                                                    overflow: hidden;">
+                                                    <tr>
+                                                        <td>
+                                                            <b>
+                                                                СПАСИБО ЗА ВАШУ ЗАЯВКУ НОМЕР <span class="order-number">WEB&#8209;123123</span>
+                                                            </b>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    
+                                                </table>
+                                                
                                                 <tr>
                                                     <td><br></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="clearsans detailes" align="center" style="font-family:'Clear Sans', sans-serif;
+                                                    <td class="clearsans detailes" align="center" style="padding-left: 5%;
+                                                    padding-right: 5%;
+                                                    font-family:'Clear Sans', sans-serif;
                                                     font-weight: 700;
-                                                    font-size:26px;
+                                                    font-size:15px;
                                                     line-height: 1.1;
                                                     color: #603813;">
                                                         Скоро наш менеджер свяжется с вами для уточнения деталей праздника <br class="detailes-br"> и скажет как внести предоплату. <br>
@@ -282,9 +291,7 @@
                                                     width: 80%;
                                                     max-width: 1358px;
                                                     padding-top: 2rem;
-                                                    /* padding-left: 3rem; */
                                                     padding-left: 5%;
-                                                    /* padding-right: 3rem; */
                                                     padding-right: 5%;
                                                     padding-bottom: 1rem;
                                                     background: rgba(255, 255, 255, 0.8);
@@ -293,48 +300,64 @@
                                                     border-radius: 50px;
                                                     border: 3px solid #8FC746;
                                                     color:#603813;
-                                                    font-size: 20px;
+                                                    font-size: 15px;
                                                     overflow: hidden;">
                                                     <tr>
                                                         <td>
-                                                            Ваши имя и фамилия: <span>Александрова Виктория</span>
+                                                            <b>
+                                                                Ваши имя и фамилия: <span>Александрова Виктория</span>
+                                                            </b>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            Телефон: <span>+8 (960) 539-86-26</span>
+                                                            <b>
+                                                                Телефон: <a href="#" class="phone" style="text-decoration: none !important; color: #603813 !important">+8(960) 539-86-26</a>
+                                                            </b>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            E-mail: <span class="phone" style="text-decoration: none; color: #603813">a.aleksandrova@cafe-anderson.ru</span>
+                                                            <b>
+                                                                E-mail: <a href="#" class="email" style="text-decoration: none !important; color: #603813 !important">a.aleksandrova@cafe-anderson.ru</a>
+                                                            </b>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            Дата праздника: <span class="date">16.12.2013</span>
+                                                            <b>
+                                                                Дата праздника: <span class="date">16.12.2013</span>
+                                                            </b>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            Время праздника: <span class="time">19:30</span>
+                                                            <b>
+                                                                Время праздника: <span class="time">19:30</span>
+                                                            </b>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            Количество детей и взрослых: <span class="count">12</span>
+                                                            <b>
+                                                                Количество детей и взрослых: <span class="count">12</span>
+                                                            </b>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            Имя и возраст именинника/цы: <span class="birthday-name">Ульяна</span>
+                                                            <b>
+                                                                Имя и возраст именинника/цы: <span class="birthday-name">Ульяна</span>
+                                                            </b>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
                                                             <br>
                                                             <br>
-                                                            Комментарий:
+                                                            <b>
+                                                                Комментарий:
+                                                            </b> 
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -354,7 +377,7 @@
                                                         <td class="sum" align="center" style="padding-top: 20px;
                                                         padding-bottom: 20px;
                                                         font-family: 'Bebas', sans-serif;
-                                                        font-size: 240%;
+                                                        font-size: 170%;
                                                         line-height: 1.1;
                                                         color: #603813;">
                                                             <b>Сумма заказа: 100&nbsp;000&nbsp;руб.</b>
